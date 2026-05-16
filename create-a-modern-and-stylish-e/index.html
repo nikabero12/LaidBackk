@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LaidBack | თანამედროვე ლუქს ტანსაცმელი</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Georgian:wght@400;500;600;700;800&family=Noto+Serif+Georgian:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=4" />
+    <style>
+      .hero::before {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.42) 43%, rgba(0, 0, 0, 0.1)),
+          url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=2200&q=85&sat=-100") center/cover;
+        filter: grayscale(1) contrast(1.08) brightness(0.72);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="nav-shell" aria-label="მთავარი ნავიგაცია">
+        <a class="brand" href="#home" aria-label="LaidBack მთავარი">
+          <img
+            class="brand-logo"
+            src="https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/4c123ecfa20fcb077ac0cb7d8de8f1d8~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&amp;refresh_token=d6e8b81f&amp;x-expires=1779127200&amp;x-signature=nZ2yQ5QS97KqKiPIrDR37Q7G%2Bqs%3D&amp;t=4d5b0474&amp;ps=13740610&amp;shp=a5d48078&amp;shcp=81f88b70&amp;idc=my2"
+            alt="LaidBack logo"
+          />
+          <span>LaidBack</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="მენიუს გახსნა" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel">
+          <a href="#home">მთავარი</a>
+          <a href="#shop">მაღაზია</a>
+          <a href="#categories">კატეგორიები</a>
+          <a href="#social">ბმულები</a>
+          <button class="icon-button" id="themeToggle" type="button" aria-label="მუქი რეჟიმის ჩართვა">
+            <span class="sun">ნათელი</span>
+            <span class="moon">მუქი</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="app"></main>
+
+    <footer class="footer">
+      <div>
+        <a class="brand footer-brand" href="#home">
+          <img
+            class="brand-logo"
+            src="https://p16-common-sign.tiktokcdn.com/tos-alisg-avt-0068/4c123ecfa20fcb077ac0cb7d8de8f1d8~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&amp;refresh_token=d6e8b81f&amp;x-expires=1779127200&amp;x-signature=nZ2yQ5QS97KqKiPIrDR37Q7G%2Bqs%3D&amp;t=4d5b0474&amp;ps=13740610&amp;shp=a5d48078&amp;shcp=81f88b70&amp;idc=my2"
+            alt="LaidBack logo"
+          />
+          <span>LaidBack</span>
+        </a>
+        <p>მშვიდი ლუქსის აუცილებელი სამოსი ყოველდღიური მოძრაობისთვის, გრძელი ღამეებისთვის და მკაფიო დილებისთვის.</p>
+      </div>
+      <div>
+        <h3>კონტაქტი</h3>
+        <a href="mailto:atelier@laidback.co">atelier@laidback.co</a>
+        <a href="tel:+12125550124">+1 212 555 0124</a>
+      </div>
+      <div>
+        <h3>სოციალური</h3>
+        <a href="https://www.instagram.com/1laidback1/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/@.1laidback1.delete" target="_blank" rel="noreferrer">TikTok</a>
+      </div>
+      <div>
+        <h3>სტუდია</h3>
+        <p>ნიუ-იორკის შოურუმი წინასწარი ჩაწერით. მსოფლიო მიწოდება ყველა კაფსულურ გამოშვებაზე.</p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js?v=4"></script>
+  </body>
+</html>
